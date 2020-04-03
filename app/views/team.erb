@@ -1,3 +1,20 @@
-
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flatiron</title>
+  </head>
+  <body>
+    <h1><%= @teams.name %></h1>
+    
+    <h2>Team Motto: <%= @teams.motto %></h2>
+    
+    <% @superheroe.each do |heroes| %>
+    
+    <h2>Hero Name: <%= heroes.name %> </h2>
+    
+    <p>Hero Power: <%= heroes.power %></p>
+    <p>Hero Biography: <%= heroes.bio %></p>
+    <% end %>
+  </body>
+</html>
 
