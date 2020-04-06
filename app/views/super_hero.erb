@@ -1,18 +1,13 @@
-member<!DOCTYPE html>
-<html>
-  <head>
-    <title>Create a Team and Heroes!</title>
-  </head>
-  <body>
+
     <h1>Create a Team and Heroes!</h1>
     
     
     
     <form action="/teams" method="POST">
-      <lable for="team_name">Team Name:</lable>
-      <input type="text" id="name" name="team[name]"><br><br>
-       <lable for="team_motto">Team Motto:</lable>
-      <input type="text" id="motto" name="team[motto]">
+      
+      <input type="text" name="team[name]"><br><br>
+       
+      <input type="text"  name="team[motto]">
       
       <h1>Hero 1</h1>
      
@@ -39,8 +34,5 @@ member<!DOCTYPE html>
       Hero Biography:<input type="text" id="member3_bio" name="team[members][][bio]"><br><br><br><br>
       <input type="submit" value="submit">
     
-    
-    
-    </form>
-  </body>
-</html>
+</form>
+ 
