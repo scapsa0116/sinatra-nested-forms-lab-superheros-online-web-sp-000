@@ -10,7 +10,7 @@ end
 
    post '/teams' do 
   binding.pry
- @teams_name = params[:team][:name]
+ @team_name = params[:team][:name]
  
  @team_motto = params[:team][:motto]
   @members = params[:team][:members]
