@@ -9,6 +9,7 @@ get '/' do
 end 
 
    post '/teams' do 
+     binding.pry
  @teams = Teams.new(name: params[:team][:name], motto: params[:team][:motto])
   members = params[:team][:members]
   
