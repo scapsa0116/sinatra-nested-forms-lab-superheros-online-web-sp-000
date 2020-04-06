@@ -4,16 +4,17 @@
     <title>Flatiron</title>
   </head>
   <body>
-    <h1><%= @teams.name %></h1>
+    <h1> <%= @team_name %></h1>
     
-    <h2>Team Motto: <%= @teams.motto %></h2>
+    <h2>Team Motto: <%= @team_motto %></h2>
     
-    <% @superheroe.each do |heroes| %>
+    <% @members.each_with_index do |heroes, index| %>
     
-    <h2>Hero Name: <%= heroes.name %> </h2>
+    <h2>Hero Name: <%= @hero_name[index] %> </h2>
     
-    <p>Hero Power: <%= heroes.power %></p>
-    <p>Hero Biography: <%= heroes.bio %></p>
+    <p>Hero Power: <%= @hero_power[index] %></p>
+    <p>Hero Biography: <%= @hero_bio[index] %></p>
+    
     <% end %>
   </body>
 </html>
