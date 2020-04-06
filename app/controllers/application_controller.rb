@@ -12,12 +12,13 @@ end
  @teams = Teams.new(name: params[:team][:name], motto: params[:team][:motto])
   members = params[:team][:members]
   
-  members.each do |members_det|
-  @members = Heroes.new(name: members_det[:name], power: members_det[:power], biography: members_det[:bio])
-     end 
- 
-     @superheroe = Heroes.all 
+ @members = members.collect do |members_det|
+  Heroes.new(name: members_det[:name], power: members_det[:power], biography: members_det[:bio])
   
+     end 
+
+     @superheroe = Heroes.all 
+  # binding.pry
   erb :team 
    end
    
