@@ -10,11 +10,20 @@ end
 
    post '/teams' do 
     # binding.pry
- @teams = Teams.new(name: params[:team][:name], motto: params[:team][:motto])
-  members = params[:team][:members]
+ @teams_name = params[:team][:name]
+ 
+ @team_motto = params[:team][:motto]
+  @members = params[:team][:members]
+  @hero_name =[]
+  @hero_power = []
+  @hero_bio = []
+  
+  
   
  @members = members.collect do |members_det|
-  Heroes.new(name: members_det[:name], power: members_det[:power], biography: members_det[:bio])
+  @hero_name<< members_det[:name], 
+   @hero_power<<  members_det[:power], 
+   @hero_bio<<  members_det[:bio])
   
      end 
 
