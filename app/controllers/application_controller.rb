@@ -20,7 +20,7 @@ end
   
   
   
-   @members = members.collect do |members_det|
+    @members.collect do |members_det|
   @hero_name<< members_det[:name] 
    @hero_power<<  members_det[:power] 
    @hero_bio<<  members_det[:bio]
