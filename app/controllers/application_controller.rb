@@ -27,7 +27,7 @@ end
   
      end 
 
-     @superheroe = Heroes.all 
+    # @superheroe = Heroes.all 
   # binding.pry
   erb :team 
    end
