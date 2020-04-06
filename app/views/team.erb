@@ -8,11 +8,11 @@
     
     <h2>Team Motto: <%= @teams_motto %></h2>
     
-    <% @superheroe.each do |heroes| %>
+    <% @members.each_with_index do |heroes, index| %>
     
-    <h2>Hero Name: <%= heroes.name %> </h2>
+    <h2>Hero Name: <%= @hero_name[index] %> </h2>
     
-    <p>Hero Power: <%= heroes.power %></p>
+    <p>Hero Power: <%= @hero_power[index] %></p>
     <p>Hero Biography: <%= heroes.bio %></p>
     
     <% end %>
